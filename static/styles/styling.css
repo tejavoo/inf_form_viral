@@ -138,3 +138,18 @@
     a{
       color: #a8c753;
     }
+
+    input[type=submit] {
+      padding:10px;
+      margin:10px 0;
+      border:0;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+      background-color: rgb(33, 41, 35);
+      font-family:inherit;
+      width:100%;
+      transition: width 1s ease-in-out;
+      align-items: center;
+      color: white;
+      text-align: center;
+      font-size: 1.5em;
+    }

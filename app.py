@@ -31,7 +31,7 @@ def add_star():
     req_data = request.form
     # print(req_data)
     idatadb.insert_one({'a':req_data['a'], 'b':req_data['b'], 'c':req_data['c'], 'd':req_data['d'], 'e':req_data['e'], 'f':req_data['f'], 'g':req_data['g'], 'h':req_data['h'], 'i':req_data['i']})
-    return ('', 204)
+    return render_template("index_hogaya.html")
 #     return "<h1></h1>"
 
 if __name__ == '__main__':
