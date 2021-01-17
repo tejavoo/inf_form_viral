@@ -1,0 +1,140 @@
+.grid-container {
+    /* grid generated at https://grid.layoutit.com/ by Teja */
+    min-height: 100vmin;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "typeform-area typeform-area typeform-area typeform-area"
+      "typeform-area typeform-area typeform-area typeform-area"
+      "animation-area animation-area animation-area animation-area"; */
+      grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    gap: 0px 0px;
+    grid-template-areas:
+    "typeform-area"
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) { .grid-container { min-height: 100vmax; } }
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {  .grid-container { min-height: 100vmax; }  }
+
+  @media only screen and (min-width: 412px) and (max-width: 767px) {  .grid-container {min-height: 100vmax;} }
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {  .grid-container { min-height: 100vmin; }  }
+  
+  /* // Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  .grid-container { min-height: 100vmin; }  }
+  
+  /* // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... } */
+
+  
+  .typeform-area { 
+      grid-area: typeform-area;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: aqua;
+      max-height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      /* min-height: 50%; */
+    }
+  
+  /* .animation-area { 
+      grid-area: animation-area;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: aquamarine;
+      position: fixed;
+      left: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height:50%;
+    } */
+
+
+    input[type=text] {
+        padding:10px;
+        margin:10px 0;
+        border:0;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        background-color: rgb(33, 41, 35);
+        font-family:inherit;
+        width:100%;
+        transition: width 1s ease-in-out;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+    input[type=text]:focus {
+        width: 100%;
+        outline: none;
+        align-items: center;
+        color: rgba(255,255,255,1);
+      }
+
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgba(224, 198, 198, 0.425);
+        font-size: 1em;
+        opacity: 1; /* Firefox */
+        text-align: center;
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgba(224, 198, 198, 0.425);
+        font-size: 1.5em;
+        text-align: center;
+
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: rgba(224, 198, 198, 0.425);
+        font-size: 1.5em;
+        text-align: center;
+
+      }
+
+    .form{
+        align-items: center;
+        text-align: center;
+        width:70%;
+    }
+
+    .submitbtn{
+      align-content: center;
+    }
+  
+
+    .quest{
+      margin-bottom:0px;
+      margin-top: 0px;
+      padding: 10px 0px 0px 0px;
+      font-size: 1.5em;
+    }
+
+    img{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    a{
+      color: #a8c753;
+    }
