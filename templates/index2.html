@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- https://www.the-art-of-web.com/html/html5-form-validation/ -->
+<!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation -->
+
+<html lang=en>
+	<head>
+		<!-- basic page needs -->
+		<meta charset="utf-8">
+		<title>Exciting Stuff !</title>
+		<meta name="surveyform" content="It is a survey to scout the best influencers out there">
+		<meta name="Author" content="Saiteja Dommeti">
+
+
+		<!-- Mobile Specific Metas -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- CSS -->
+
+		<link rel="stylesheet" type="text/css" href="./static/styles/styling_naya.css">
+        <link rel="stylesheet" href="./static/styles/skeleton.css">
+        <link rel="stylesheet" href="./static/styles/normalize.css">
+
+        <!-- Scripts to Load -->
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="./static/scripts.js"></script>
+
+        <!-- FAVICON -->
+        <link rel="icon" type="image/png" href="./static/resources/favicon.ico">
+	</head>
+
+	<body>
+		<!-- Main Code Starts Here -->
+		<div id="main">
+			<div class="container">
+				<div class="row">
+					<div class="twelve columns" style="margin-top: 20vh">
+						<h1 style="text-align: center;">Everybody. Influence.</h1>
+                        <p style="text-align: center;">If you're interested in becoming an influencer, getting brand partnerships, 
+                            free products, easy money in your bank and are on social media, fill this form!</p>
+                    <h2 style="text-align: center;">Please Fill In The Details</h2>
+					</div>
+					<div class="twelve columns" style="margin-top: 5vh ;">
+						<form action="./data/" method="POST">
+							<div id="form-div">
+								<div class="ind">
+	                            <p class="quest" style="text-align: center;">Who helped you find this form? Any references.</p>
+	                            <input type="text" placeholder="Your Answer" class="in0" name="a">
+	                            <span><img src="./static/resources/comicstaan.gif" style="display: none; align-content: center;width: 0%" class="im1"></span>
+		                        </div>
+
+		                        <div class="ind">
+		                            <p class="quest" style="text-align: center;">Name *</p>
+		                            <input type="text" placeholder="Answer" class="in1" name="b" required>
+		                            <span><img src="./static/resources/likhit.gif" style="display: none; align-content: center;width: 0%" class="im2" loading="lazy"></span>
+		                        </div>
+
+		                        <div class="ind">
+		                            <p class="quest" style="text-align: center;">Email *</p>
+		                            <input type="text" placeholder="Batao" class="in2"  name="c" required>
+		                            <span><img src="./static/resources/email.gif" style="display: none; align-content: center;width: 0%" class="im3" loading="lazy"></span>
+		                        </div>
+
+		                        <div class="ind">
+		                            <p class="quest" style="text-align: center;">Address</p>
+		                            <input type="text" placeholder="where art thou" class="in3" name="d">
+		                            <span><img src="./static/resources/hey.gif" style="display: none; align-content: center;width: 0%" class="im4" loading="lazy"></span>
+		                        </div>
+
+		                        <div class="ind">
+		                            <p class="quest" style="text-align: center;">Phone number *</p>
+		                            <input type="text" placeholder="them digits" class="in4"  name="e" required>
+		                            <span><img src="./static/resources/phone.gif" style="display: none; align-content: center;width: 0%" class="im5" loading="lazy"></span>
+		                        </div>
+
+		                        <div class="ind">
+		                            <p class="quest" style="text-align: center;">Define yourself, what do you do and what are your interests? *</p>
+		                            <input type="text" placeholder="booooring" class="in5" name="f" required>
+		                            <span><img src="./static/resources/hmmm.webp" style="display: none; align-content: center;width: 0%" class="im6" loading="lazy"></span>
+		                        </div>
+
+		                        <div class="ind">
+		                            <p class="quest" style="text-align: center;">How many followers do you have on Instagram? * </p>
+		                            <input type="text" placeholder="following kitna hain" class="in6" name="g" required>
+		                            <span><img src="./static/resources/followers.webp" style="display: none; align-content: center;width: 0%" class="im7" loading="lazy"></span>
+		                        </div>
+
+		                        <div class="ind">
+		                            <p class="quest" style="text-align: center;">What is your @username ? * </p>
+		                            <input type="text" placeholder="them digits" class="in7" name="h" required>
+		                            <span><img src="./static/resources/insta.webp" style="display: none; align-content: center;width: 0%" class="im8" loading="lazy"></span>
+		                        </div>
+
+		                        <div class="ind">
+		                            <p class="quest" style="text-align: center;">Average Likes & Average Story Views *</p>
+		                            <input type="text" placeholder="Me likeyyyy" class="in8" name="i" required>
+		                            <span><img src="./static/resources/avg.webp" style="display: none; align-content: center;width: 0%" class="im9" loading="lazy"></span>
+		                        </div>
+
+		                        
+
+
+		                        <div class="inputBx submitbtn">
+		                            <input type="submit" value="Submit">
+		                        </div>
+		                    </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
