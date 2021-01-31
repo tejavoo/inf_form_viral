@@ -32,7 +32,7 @@ def add_star():
     idatadb = mongo.db.idatadbra
     req_data = request.form
     # print(req_data)
-    idatadb.insert_one({'WhoHelpedYouFindThisForm':req_data['a'], 'Name':req_data['b'], 'Email':req_data['c'], 'Address':req_data['d'], 'PhoneNumber':req_data['e'], 'DefineYourself':req_data['f'], 'Followers':req_data['g'], 'InstaUsername':req_data['h'], 'Average_Likes':req_data['i']})
+    idatadb.insert_one({'WhoHelpedYouFindThisForm':req_data['a'], 'Name':req_data['b'], 'Email':req_data['c'], 'Address':req_data['d'], 'PhoneNumber':req_data['e'], 'DefineYourself':req_data['f'], 'Followers':req_data['g'], 'InstaUsername':req_data['h'], 'AveragePostLikes':req_data['i'],'AverageStoryViews':req_data['j'],'AccountType':req_data['k']})
     # return ('', 204)
     return render_template("index_hogaya.html")
 #     return "<h1></h1>"
